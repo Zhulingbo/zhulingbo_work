@@ -1,0 +1,385 @@
+.banner{
+    height: 505px;
+    overflow: hidden;
+}
+.banner .wrap {
+    width: 300%;
+}
+.banner .wrap .slide {
+    width: 1200px;
+    height: 505px;
+    float: left;
+}
+/*明星栏 star*/
+.star{
+    height: 300px;
+}
+h2{
+
+    font-size: 34px;
+    text-align: center;
+}
+.star ul {
+    display: flex;
+    height:160px;
+}
+.star ul li {
+    flex: 1;
+    height:160px;
+}
+.star ul li a {
+    width: 150px;
+    height:160px;
+    margin: 0 auto;
+    transition:all 1s;
+}
+.star .pic{
+    width: 114px;
+    height: 114px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    transition:all 1s;
+}
+.star p {
+    text-align: center;
+    margin-top:20px;
+}
+.star a:hover{
+    transform:scale(1.2);
+    transition:all 1s;
+}
+.star a:hover span {
+    box-shadow: 0 0 10px #8a8888;
+    transition:all 1s;
+}
+/*迪斯尼资讯 star*/
+.news{
+    height: 820px;
+    /*background-color:peru;*/
+}
+.news_title{
+    line-height: 100px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+.newsLeft_list{
+    width: 50%;
+    height: 710px;
+    border: 1px  solid   #dcdcdc;
+    overflow: hidden;
+    transition:all 1s;
+    box-sizing: border-box;
+}
+.newsLeft_list li{
+    overflow: hidden;
+    width: 25%;
+    box-sizing: border-box;
+}
+.newsLeft_list:hover {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+    transition:all 1s;
+}
+.newsLeft_list .newsLCont{
+    height:235px;
+    margin: 50px 50px 50px 50px;
+}
+.newsLCont a{
+    color: #333;
+    font-size: 30px;
+}
+.news_p{
+    margin-top: 25px;
+    color: #666;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.newsRight_list{
+    /*display: flex;*/
+    width: 50%;
+    box-sizing: border-box;
+    
+}
+
+.newsRight_list li {
+    
+    float: left;
+    width: 50%;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    /*float: left;*/
+    
+    /*flex: 50%;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*}*/
+}
+.nRbutton{
+    
+    height: 285px;
+    width: 600px;
+    overflow: hidden;
+    
+    
+}
+.nRbutton:hover{
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+}
+.newsRight_list li:hover {
+    /*position: relative;*/
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+}
+/*.newsRight_list li img{*/
+    /*width:300px;*/
+    /*height: 250px;*/
+/*}*/
+
+.newsRcont{
+    width: 300px;
+    padding: 30px 30px;
+    height: 175px;
+    box-sizing: border-box;
+    
+}
+.newLeft_a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    
+}
+
+
+
+
+/*授权商品 shop---- star----开始 */
+.shop{
+    padding-top: 70px;
+}
+.h_title{
+    text-align: center;
+    font-size: 34px;
+    line-height: 35px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/*上------start  开始*/
+.h_shoppinglist dt{
+    width: 600px;
+    height: 591px;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    position: relative;
+    transition: all 2s;
+}
+.h_shoppinglist dt:hover{
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    transform: skewY(-1deg) scale(1.05);
+    
+}
+.h_shoppinglist dd{
+    width: 298px;
+    height: 295px;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    margin-left: -1px;
+    margin-bottom: -1px;
+}
+.h_shoppinglist dd:hover{
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+.h_shoppingnrleft {
+    position: absolute;
+    left: 67px;
+    bottom: 45px;
+}
+.h_shoppingnrleft h4{
+    font-size: 30px;
+    font-weight: normal;
+}
+.h_shoppingnrleft h4 a{
+    font-size: 30px;
+    color: #fff;
+}
+.h_shoppingnrright{
+    padding: 0 20px;
+}
+/*上------ender  结束*/
+
+/*中------start  开始*/
+.m_shoppinglist dd {
+    float: left;
+}
+.m_shoppinglist dt {
+    width: 600px;
+    height: 591px;
+    float: right;
+    border: 1px solid #dcdcdc;
+    margin-top: -1px;
+    margin-left: -1px;
+    position: relative;
+}
+.m_shoppinglist dt:hover {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+.s_l_t,.s_l_b{
+    width: 298px;
+    height: 295px;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    margin-bottom: -1px;
+    position: relative;
+}
+.s_l_t:hover{
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+.s_l_b:hover{
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+.s_r {
+    width: 298px;
+    height: 591px;
+    overflow: hidden;
+    position: relative;
+}
+.s_r:hover{
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+.h_shoppingnrr h4 a{
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    left: 50px;
+    bottom: 45px;
+}
+.h_shoppingnr {
+    padding: 0 20px;
+}
+/*中------ender  结束*/
+
+
+/*授权商品 shop---- end---- 结束 */
+
+
+/*迪斯尼乐园*/
+.happyArea{
+    padding-top: 50px;
+}
+.happyArea_title{
+    text-align: center;
+    font-size: 34px;
+    line-height: 35px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/*上------start  开始*/
+.h_happyArea dt{
+    width: 600px;
+    height: 598px;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    position: relative;
+}
+.h_happyArea dt:hover{
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    
+}
+.h_happyArea dd{
+    width: 298px;
+    height: 298px;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    position: relative;
+}
+.h_happyArea dd:hover{
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+.h_happyArea .fz img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s linear;
+}
+.h_happyArea .fz img:nth-child(1) {
+    z-index: 1;
+    
+    backface-visibility: hidden;
+}
+
+.h_happyArea .fz:hover img {
+    transform: rotateY(180deg);
+}
+
+
+
+.h_happyArealeft {
+    position: absolute;
+    left: 67px;
+    bottom: 45px;
+}
+.h_happyArealeft h4{
+    font-size: 30px;
+    font-weight: normal;
+}
+.h_happyArealeft h4 a{
+    font-size: 30px;
+    color: #fff;
+}
+.h_happyArearight{
+    padding: 0 20px;
+}
+/*上------ender  结束*/
+/*迪斯尼电影*/
+.movie{
+    height: 1340px;
+    background-color:rosybrown;
+}
+/*更多影视资讯*/
+.moreFilmNew{
+    height: 615px;
+    background-color:deeppink;
+}
+/*iconfont--css*/
+/*@font-face {*/
+    /*font-family: 'iconfont';*/
+    /*src: url('../font/iconfont.eot');*/
+    /*src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../font/iconfont.woff') format('woff'),*/
+    /*url('../font/iconfont.ttf') format('truetype'),*/
+    /*url('../font/iconfont.svg#iconfont') format('svg');*/
+/*}*/
+
+/*.iconfont{*/
+    /*font-family:"iconfont" !important;*/
+    /*font-size:16px;font-style:normal;*/
+    /*-webkit-font-smoothing: antialiased;*/
+    /*-webkit-text-stroke-width: 0.2px;*/
+    /*-moz-osx-font-smoothing: grayscale;*/
+/*}*/
