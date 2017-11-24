@@ -583,21 +583,21 @@
 </div>
 <script>
     $(function () {
-        //预加载图片
-        var loaded = 0;
-        if ($('.index img').length === 0 || navigator.userAgent.indexOf('MSIE 9') != -1){
-            init_page();
-        }else{
-            $('.index').imagesLoaded().progress(function(instance,image){
-                loaded ++ ;
-                $('.loading_c span').css('width', parseInt(loaded / instance.images.length * 100) + '%');
-                if (loaded == instance.images.length) {
-                    setTimeout(function () {
-                        $('.loading_out').fadeOut();
-                    }, 100);
-                }
-            });
-        }
+//        //预加载图片
+//        var loaded = 0;
+//        if ($('.index img').length === 0 || navigator.userAgent.indexOf('MSIE 9') != -1){
+//            init_page();
+//        }else{
+//            $('.index').imagesLoaded().progress(function(instance,image){
+//                loaded ++ ;
+//                $('.loading_c span').css('width', parseInt(loaded / instance.images.length * 100) + '%');
+//                if (loaded == instance.images.length) {
+//                    setTimeout(function () {
+//                        $('.loading_out').fadeOut();
+//                    }, 100);
+//                }
+//            });
+//        }
 
         $('header i').click(function () {
             $(this).addClass('seal').parent().siblings().children().removeClass('seal');

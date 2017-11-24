@@ -53,7 +53,7 @@ header {
     margin-left: -600px;
     top: 0;
     background-color: #fff;
-    z-index: 999;
+    z-index: 100;
 }
 header ul{
     display: flex;
@@ -189,8 +189,6 @@ footer .copyright {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 350px;
-    height: 200px;
     margin-left: -175px;
     margin-top: -100px;
 }
