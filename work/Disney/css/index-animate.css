@@ -32,10 +32,10 @@
 
 @keyframes qiqiu {
     0%{
-        transform: translate(0,0);
+        transform: translateY(0);
     }
     100%{
-        transform: translate(-3px,-3px);
+        transform: translateY(-6px);
     }
 }
 @keyframes piao {

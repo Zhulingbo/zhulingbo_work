@@ -580,6 +580,13 @@ h2{
     bottom:100px;
 
 }
+.to_top .backTop {
+    width: 25px;
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    animation: qiqiu 2s infinite alternate;
+}
 .to_top .main{
     position: relative;
     width: 80px;

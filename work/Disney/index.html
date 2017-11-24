@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <title>迪士尼乐园——迪士尼中国官网</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
@@ -12,7 +12,8 @@
     <script src="font/iconfont.js"></script>
     <style type="text/css">
         .icon {
-            width: 1em; height: 1em;
+            width: 1em;
+            height: 1em;
             vertical-align: -0.15em;
             fill: currentColor;
             overflow: hidden;
@@ -579,9 +580,10 @@
 <div class="to_top top_anim animated ">
     <div class="main">
         <img src="img/to_top.png" width="100%">
-        <span class="qiqiu"></span>
+        <!--<span class="qiqiu"></span>-->
         <span class="to_top_pao"></span>
     </div>
+    <img src="img/hand.png" alt="" class="backTop">
 </div>
 <script>
     $(function () {
@@ -602,6 +604,7 @@
         })
         $('.to_top').on('click',function () {
             $(this).children('.main').addClass('zhuan');
+            $('.backTop').fadeOut();
             setTimeout(function () {
                 $('.to_top').addClass('bounceOutUp');
             },400)
