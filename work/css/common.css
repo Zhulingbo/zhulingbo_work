@@ -49,8 +49,7 @@ header {
     padding: 20px;
     box-sizing: border-box;
     position: fixed;
-    left: 50%;
-    margin-left: -600px;
+    left:0;
     top: 0;
     background-color: #fff;
     z-index: 100;
@@ -175,7 +174,7 @@ footer .copyright {
 
 .loading_out {
     z-index: 999;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -190,7 +189,7 @@ footer .copyright {
     top: 50%;
     left: 50%;
     margin-left: -175px;
-    margin-top: -100px;
+    margin-top: -150px;
 }
 
 .loading img {
@@ -209,6 +208,15 @@ footer .copyright {
     height: 6px;
     max-width: 100%;
     background: #f00;
+    animation: load 3s forwards linear;
+}
+@keyframes load {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
 }
 
 .loading_c em {

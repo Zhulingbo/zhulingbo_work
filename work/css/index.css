@@ -576,7 +576,7 @@ h2{
 .to_top {
     width: 80px;
     position: fixed;
-    right: 20px;
+    right: 5px;
     bottom:100px;
 
 }
