@@ -171,11 +171,17 @@ h2{
     border: 1px solid #dcdcdc;
     position: relative;
 }
-
+.h_shoppinglist dt:hover {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+.h_shoppinglist dt img{
+    transition: all 1s linear;
+}
 .h_shoppinglist dt img:hover{
     position: relative;
     z-index: 1;
-    transition: all 1s linear;
     transform: scale(1.1);
 }
 .h_shoppinglist dd{
@@ -186,6 +192,15 @@ h2{
     border: 1px solid #dcdcdc;
     margin-left: -1px;
     margin-bottom: -1px;
+}
+.h_shoppinglist dd img{
+    width: 100%;
+    transition: all 0.3s linear;
+}
+.h_shoppinglist dd img:hover{
+    position: relative;
+    z-index: 1;
+    transform: scale(1.1);
 }
 .h_shoppinglist dd:hover{
     position: relative;
@@ -198,6 +213,11 @@ h2{
     left: 67px;
     bottom: 45px;
 }
+.h_shoppingnrright{
+    position: relative;
+    z-index: 3;
+    padding: 0 20px;
+}
 .h_shoppingnrleft h4{
     font-size: 30px;
     font-weight: normal;
@@ -206,15 +226,21 @@ h2{
     font-size: 30px;
     color: #fff;
 }
-.h_shoppingnrright{
-    padding: 0 20px;
-}
+
 /*上------ender  结束*/
 
 /*中------start  开始*/
 .m_shoppinglist dd {
     box-sizing: border-box;
     float: left;
+}
+.m_shoppinglist dd img {
+    transition: all 0.3s linear;
+}
+.m_shoppinglist dd img:hover {
+    position: relative;
+    z-index: 1;
+    transform: scale(1.1);
 }
 .m_shoppinglist dt {
     width: 600px;
@@ -231,6 +257,14 @@ h2{
     position: relative;
     z-index: 1;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+.m_shoppinglist dt img {
+    transition: all 1s linear;
+}
+.m_shoppinglist dt img:hover {
+    position: relative;
+    z-index: 1;
+    transform: scale(1.1);
 }
 .s_l_t,.s_l_b{
     width: 300px;
@@ -266,6 +300,8 @@ h2{
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 .h_shoppingnrr h4 a{
+    position: relative;
+    z-index: 3;
     font-size: 30px;
     color: #fff;
     position: absolute;
@@ -273,6 +309,8 @@ h2{
     bottom: 45px;
 }
 .h_shoppingnr {
+    position: relative;
+    z-index: 3;
     padding: 0 20px;
 }
 /*中------ender  结束*/
@@ -401,25 +439,174 @@ h2{
     height: 1340px;
     background-color:rosybrown;
 }
-/*更多影视资讯*/
-.moreFilmNew{
-    height: 615px;
-    background-color:deeppink;
+.all    {
+    position: relative;
 }
-/*iconfont--css*/
-/*@font-face {*/
-    /*font-family: 'iconfont';*/
-    /*src: url('../font/iconfont.eot');*/
-    /*src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),*/
-    /*url('../font/iconfont.woff') format('woff'),*/
-    /*url('../font/iconfont.ttf') format('truetype'),*/
-    /*url('../font/iconfont.svg#iconfont') format('svg');*/
-/*}*/
+.all .text {
+    position: relative;
+    height: 135px;
+}
+.all .text > h1{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    font-size: 34px;
+    font-weight: bold;
+    color: #333;
+    transform: translate(-50%,-50%);
+}
+.moveData{
+    display: flex;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.blackb{
+    flex: 1;
+    /*height:100%;*/
+}
+.blackb_textA{
+    font-size: 25px;
+    font-weight: 300;
+    text-indent: 2em;
+}
+.blackb_textB{
+    font-size: 16px;
+    color: #6d6b70;
+    text-indent: 2em;
+}
+.blackb_k{
+    width: 0px;
+    height: 0px;
+    border:30px solid white;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    left: 45px;
+    bottom:96px;
+}
 
-/*.iconfont{*/
-    /*font-family:"iconfont" !important;*/
-    /*font-size:16px;font-style:normal;*/
-    /*-webkit-font-smoothing: antialiased;*/
-    /*-webkit-text-stroke-width: 0.2px;*/
-    /*-moz-osx-font-smoothing: grayscale;*/
-/*}*/
+.moveData ul {
+    width: 50%;
+    flex: 1;
+    height:480px;
+}
+.moveData ul li {
+    width: 100%;
+
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    border-left:1px solid #ccc;
+    box-sizing: border-box;
+}
+.moveData ul .main {
+    width: 598px;
+    height: 75px;
+    position: relative;
+}
+.moveData ul .main .box {
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.moveData ul .main span {
+    display: block;
+}
+.moveData ul .main .time,
+.moveData ul .main .pic{
+    width: 64px;
+    height: 48px;
+    float: left;
+}
+.moveData ul .main .time {
+    margin-left: 23px;
+}
+.moveData ul .main .txt {
+    width: 350px;
+    height: 48px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    float: left;
+}
+.moveData ul .main .txt .tit {
+    font-size: 18px;
+    line-height: 28px;
+}
+.moveData ul .main .txt .p {
+    font-size: 14px;
+}
+.moveData ul i{
+    width: 8px;
+    height:8px;
+    border-bottom: 3px solid #ccc;
+    border-right:3px solid #ccc;
+    transform:rotate(-45deg);
+    position: absolute;
+    right: 30px;
+    top:50%;
+    margin-top: -4px;
+    transition:all .4s;
+}
+.moveData ul .image {
+    width: 600px;
+    height: 200px;
+    display: none;
+}
+.moveData ul .image1 {
+    background: url("../img/alading.jpg") no-repeat 23px center ;
+    background-size: 100%;
+}
+.moveData ul .image2 {
+    background: url("../img/leishen.jpg") no-repeat 23px center ;
+    background-size: 100%;
+}
+.moveData ul .image3 {
+    background: url("../img/starwar.jpg") no-repeat 23px center ;
+    background-size: 100%;
+}
+.moveData ul .image4 {
+    background: url("../img/banner2.jpg") no-repeat 23px top ;
+    background-size: 100%;
+}
+
+/*to_top*/
+.to_top {
+    width: 80px;
+    position: fixed;
+    right: 20px;
+    bottom:100px;
+
+}
+.to_top .main{
+    position: relative;
+    width: 80px;
+}
+.to_top img{
+    animation: piao 1s infinite alternate;
+}
+.to_top .qiqiu{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left:10px;
+    top:2px;
+    background: url("../img/qiqiu.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    animation: qiqiu 2s infinite alternate;
+}
+.to_top .to_top_pao{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -3px;
+    bottom: 0;
+    opacity: 0;
+    background: url("../img/to_top_pao.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    animation: show .5s infinite alternate;
+}
