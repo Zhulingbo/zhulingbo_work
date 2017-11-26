@@ -1,0 +1,794 @@
+.banner {
+  height: 505px;
+  overflow: hidden;
+}
+
+.banner .wrap {
+  width: 300%;
+}
+
+.star {
+  height: 300px;
+  padding-top: 60px;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.star ul {
+  display: flex;
+  height: 160px;
+}
+
+.star ul li {
+  flex: 1;
+  height: 160px;
+}
+
+.star ul li a {
+  width: 150px;
+  height: 160px;
+  margin: 0 auto;
+  transition: all 1s;
+}
+
+.star .pic {
+  width: 114px;
+  height: 114px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.star p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.star a:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.star a:hover span {
+  box-shadow: 0 0 10px #8a8888;
+  transition: all 1s;
+}
+
+
+/*<!--视频开始-->*/
+#plays,#plays2,#plays3 {
+  display: none;
+  padding-top: 20px;
+  width: 967px;
+  height: 544px;
+  margin: 0 auto;
+  z-index: 101;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.login-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000000;
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  display: none;
+  z-index: 100;
+}
+/*<!--视频开始-->*/
+
+
+/*迪斯尼资讯 star*/
+
+/*news*/
+.news .main {
+  height: 710px;
+  display: flex;
+  border: 1px solid #ccc
+}
+
+.news .main .big {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  /*opacity:0;*/
+  position: relative;
+  transition: all .2s;
+}
+
+.news .main .big:hover {
+  box-shadow: 0 0 10px #8c8888;
+  transition: all .2s;
+  z-index: 10;
+}
+
+.news .main .big .text {
+  width: 100%;
+  padding: 50px 50px 0 50px;
+  box-sizing: border-box;
+}
+
+.news .main .big .text .tit {
+  color: #333;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.news .main .big .text .txt {
+  color: #333;
+  margin-top: 20px;
+}
+
+.news .main ul {
+  flex: 1;
+}
+
+.news .main ul li {
+  width: 50%;
+  float: left;
+  position: relative;
+  transition: all .2s;
+  /*opacity:0;*/
+}
+
+.news .main ul li:hover {
+  box-shadow: 0 0 10px #000;
+  transition: all .2s;
+  z-index: 10;
+}
+
+.sj {
+  border: 15px solid transparent;
+  border-bottom: 15px solid #fff;
+}
+
+.news .main ul li .sj {
+  position: absolute;
+  left: 40px;
+  top: -30px;
+}
+
+.news .main ul li .text {
+  width: 100%;
+  height: 178px;
+  padding: 30px 30px 0 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.news .main ul li .text .tit {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.news .main ul li .text .txt {
+  color: #333333;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.news .main ul li:nth-child(3) {
+  width: 100%;
+}
+
+.news .main ul li:nth-child(3) .sj {
+  border: 15px solid transparent;
+  border-right: 15px solid #fff;
+  left: -30px;
+  top: 40px;
+}
+
+.news .main ul li:nth-child(3) .text {
+  float: right;
+  width: 50%;
+  border: 0;
+  height: 100%;
+}
+
+/*授权商品 shop---- star----开始 */
+.shop {
+  padding-top: 70px;
+}
+
+.h_title {
+  text-align: center;
+  font-size: 34px;
+  line-height: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/*上------start  开始*/
+.h_shoppinglist dt {
+  width: 600px;
+  height: 590px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: -1px;
+  border: 1px solid #dcdcdc;
+  position: relative;
+}
+
+.h_shoppinglist dt:hover {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.h_shoppinglist dt img {
+  transition: all 1s linear;
+}
+
+.h_shoppinglist dt img:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.1);
+}
+
+.h_shoppinglist dd {
+  width: 301px;
+  height: 295px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+.h_shoppinglist dd img {
+  width: 100%;
+  transition: all 0.3s linear;
+}
+
+.h_shoppinglist dd img:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.1);
+}
+
+.h_shoppinglist dd:hover {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.h_shoppingnrleft {
+  z-index: 3;
+  position: absolute;
+  left: 67px;
+  bottom: 45px;
+}
+
+.h_shoppingnrright {
+  position: relative;
+  z-index: 3;
+  padding: 0 20px;
+}
+
+.h_shoppingnrleft h4 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.h_shoppingnrleft h4 a {
+  font-size: 30px;
+  color: #fff;
+}
+
+/*上------ender  结束*/
+
+/*中------start  开始*/
+.m_shoppinglist dd {
+  box-sizing: border-box;
+  float: left;
+}
+
+.m_shoppinglist dd img {
+  transition: all 0.3s linear;
+}
+
+.m_shoppinglist dd img:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.1);
+}
+
+.m_shoppinglist dt {
+  width: 600px;
+  height: 590px;
+  float: right;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  position: relative;
+}
+
+.m_shoppinglist dt:hover {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.m_shoppinglist dt img {
+  transition: all 1s linear;
+}
+
+.m_shoppinglist dt img:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.1);
+}
+
+.s_l_t, .s_l_b {
+  width: 300px;
+  height: 296px;
+  overflow: hidden;
+  margin-bottom: -1px;
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+  position: relative;
+}
+
+.s_l_t:hover {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.s_l_b:hover {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.s_r {
+  width: 301px;
+  height: 590px;
+  margin-left: -1px;
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.s_r:hover {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.h_shoppingnrr h4 a {
+  position: relative;
+  z-index: 3;
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  left: 50px;
+  bottom: 45px;
+}
+
+.h_shoppingnr {
+  position: relative;
+  z-index: 3;
+  padding: 0 20px;
+}
+
+/*中------ender  结束*/
+
+/*授权商品 shop---- end---- 结束 */
+
+/*迪斯尼乐园*/
+.happyArea {
+  padding-top: 50px;
+}
+
+.happyArea_title {
+  text-align: center;
+  font-size: 34px;
+  line-height: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/*上------start  开始*/
+.h_happyArea dt {
+  width: 600px;
+  height: 598px;
+  overflow: hidden;
+  border: 1px solid #dcdcdc;
+  position: relative;
+}
+
+.h_happyArea .item {
+  background: red;
+}
+
+.h_happyArea .item .info {
+  background: rgba(0, 0, 0, .65);
+}
+
+.h_happyArea .item .info h5 {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #fff;
+}
+
+.h_happyArea .item .info p {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.h_happyArea .mask {
+  display: none;
+  width: 600px;
+  height: 160px;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.h_happyArea dt:hover {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  
+}
+
+.h_happyArea dt img {
+  transition: all 1s linear;
+  
+}
+
+.h_happyArea dt img:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.05);
+}
+
+.h_happyArea dd {
+  width: 298px;
+  height: 298px;
+  overflow: hidden;
+  border: 1px solid #dcdcdc;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  position: relative;
+}
+
+.h_happyArea dd a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.h_happyArea dd:hover {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.h_happyAreaTurn {
+  width: 100%;
+  height: 100%;
+}
+
+.h_happyAreaTurn .h_happyAreaBack {
+  transition: all .5s linear;
+  background: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  transform: rotateY(90deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.h_happyAreaTurn .h_happyAreaBack h5 {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #fff;
+}
+
+.h_happyAreaTurn .h_happyAreaBack p {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.h_happyArea .h_happyAreaTurn img {
+  transform: rotateY(0deg);
+  transition: all .5s linear;
+  z-index: 2;
+  
+  backface-visibility: hidden;
+}
+
+/*.h_happyArea .h_happyAreaTurn img:nth-child(1) {*/
+/**/
+/*}*/
+
+.h_happyAreaTurn:hover img {
+  transform: rotateY(-90deg);
+}
+
+.h_happyAreaTurn:hover .rotate {
+  transform: rotateY(0deg);
+}
+
+.h_happyArealeft {
+  display: none;
+  position: absolute;
+  left: 67px;
+  bottom: 35px;
+  z-index: 2;
+}
+
+.h_happyArealeft h4 a {
+  font-size: 25px;
+  color: #fff;
+  
+}
+
+.h_happyArealeft p {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.h_happyArearight {
+  padding: 0 20px;
+}
+
+/*上------ender  结束*/
+
+/*迪斯尼电影*/
+
+.movie {
+  height: 1340px;
+  background-color: rosybrown;
+}
+
+.all {
+  position: relative;
+}
+
+.all .text {
+  position: relative;
+  height: 135px;
+}
+
+.all .text > h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 34px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.moveData {
+  display: flex;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.blackb {
+  flex: 1;
+  /*height:100%;*/
+}
+
+.blackb_textA {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 300;
+  text-indent: 2em;
+  color: #333;
+}
+
+.blackb_textB {
+  font-size: 14px;
+  text-indent: 4em;
+  color: #333;
+}
+
+.blackb_k {
+  width: 0px;
+  height: 0px;
+  border: 30px solid white;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  left: 45px;
+  bottom: 96px;
+}
+
+.moveData ul {
+  width: 50%;
+  flex: 1;
+  height: 480px;
+}
+
+.moveData ul li {
+  width: 100%;
+  
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.moveData ul .main {
+  width: 598px;
+  height: 95px;
+  position: relative;
+}
+
+.moveData ul .main .box {
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.moveData ul .main span {
+  display: block;
+}
+
+.moveData ul .main .time,
+.moveData ul .main .pic {
+  width: 64px;
+  height: 48px;
+  float: left;
+}
+
+.moveData ul .main .time {
+  margin-left: 23px;
+}
+
+.moveData ul .main .txt {
+  height: 48px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.moveData ul .main .txt .tit {
+  font-size: 16px;
+  color: #333;
+}
+
+.moveData ul .main .txt .p {
+  font-size: 12px;
+  color: #333;
+  line-height: 20px;
+}
+
+.moveData ul i {
+  width: 8px;
+  height: 8px;
+  border-bottom: 3px solid #ccc;
+  border-right: 3px solid #ccc;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  margin-top: -4px;
+  transition: all .4s;
+}
+
+.moveData ul .image {
+  width: 600px;
+  height: 200px;
+  display: none;
+}
+
+.moveData ul .image1 {
+  background: url("../img/alading.jpg") no-repeat 23px center;
+  background-size: 100%;
+}
+
+.moveData ul .image2 {
+  background: url("../img/leishen.jpg") no-repeat 23px center;
+  background-size: 100%;
+}
+
+.moveData ul .image3 {
+  background: url("../img/starwar.jpg") no-repeat 23px center;
+  background-size: 100%;
+}
+
+.moveData ul .image4 {
+  background: url("../img/banner2.jpg") no-repeat 23px top;
+  background-size: 100%;
+}
+
+.moveData ul .image5 {
+  background: url("../img/xingqiu.jpg") no-repeat 23px top;
+  background-size: 100%;
+}
+
+/*to_top*/
+.to_top {
+  width: 80px;
+  position: fixed;
+  right: 5px;
+  bottom: 100px;
+  transform: scale(0.8);
+}
+
+.to_top .backTop {
+  width: 25px;
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  animation: qiqiu 2s infinite alternate;
+}
+
+.to_top .main {
+  position: relative;
+  width: 80px;
+}
+
+.to_top img {
+  animation: piao 1s infinite alternate;
+}
+
+.to_top .qiqiu {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  background: url("../img/qiqiu.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  animation: qiqiu 2s infinite alternate;
+}
+
+.to_top .to_top_pao {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -3px;
+  bottom: 0;
+  opacity: 0;
+  background: url("../img/to_top_pao.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  animation: show .5s infinite alternate;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>
+<html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>组员介绍</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <script type="text/javascript" src="./js/jquery.min2.0.3.js" ></script>
+    <script type="text/javascript" src="js/rem_w.js" ></script>
+    <script type="text/javascript" src="js/idangerous.swiper.js"></script>
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+<body>
+	<div class="container">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide p1">
+                    <img src="img/tit1.png" class="tit">
+                    <img src="img/img1.png" width="100%" class="img1">
+                    <img src="img/dzy.png" width="100%" class="img2">
+                    <div class="text">
+                        <span class="border"></span>
+                        <div class="txt">
+                            <p>哇,你真是个天才~</p>
+                        </div>
+                    </div>
+				</div>
+                <div class="swiper-slide p2">
+                    <img src="img/tit2.png" class="tit">
+                    <img src="img/img2.png" width="100%" class="img1">
+                    <img src="img/zlb.png" width="100%" class="img2">
+                    <div class="text">
+                        <span class="border"></span>
+                        <div class="txt">
+                            <p>你看我屌吗~...不看我晕针..噗嗤</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p3">
+                    <img src="img/tit3.png" class="tit">
+                    <img src="img/img3.png" width="100%" class="img1">
+                    <img src="img/lxh.png" width="100%" class="img2">
+                    <div class="text">
+                        <span class="border"></span>
+                        <div class="txt">
+                            <p>温斯顿..你的血压有升高了~</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p4">
+                    <img src="img/tit4.png" class="tit">
+                    <img src="img/img4.png" width="100%" class="img1">
+                    <img src="img/ymh.png" width="100%" class="img2">
+                    <div class="text">
+                        <span class="border"></span>
+                        <div class="txt">
+                            <p>刘噶哇嘎太尅奥库拉乌</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p5">
+                    <img src="img/tit5.png" class="tit">
+                    <img src="img/img5.png" width="100%" class="img1">
+                    <img src="img/lzl.png" width="100%" class="img2">
+                    <div class="text">
+                        <span class="border"></span>
+                        <div class="txt">
+                            <p>一点寒芒先到,随后枪出如龙</p>
+                        </div>
+                    </div>
+                </div>
+		    </div>
+	    </div>
+        <a href="javascript:;" class="arrow">
+            <img src="img/arrow.png" width="100%">
+        </a>
+    </div>
+</body>
+<script>
+	var mySwiper = $('.swiper-container:first').swiper({
+        mode:'vertical',
+        speed:800,
+        onSlideChangeStart: function(mySwiper,direction){
+            if(mySwiper.activeIndex == $('.swiper-slide').length-1){
+                $(".arrow").fadeOut();
+            }else{
+                $(".arrow").fadeIn();
+            }
+        }
+    });
+	$(".arrow").on('click',function () {
+        mySwiper.swipeNext();
+    })
+</script>
